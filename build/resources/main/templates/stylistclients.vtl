@@ -1,0 +1,37 @@
+<h1>$stylist.getStylistName()</h1>
+
+<div class="lists">
+#if ($clientSize > 0)
+  $stylist.getStylistName()'s clients are:
+  <ul>
+    #foreach($client in $clients)
+      <li>$client.getName()</li>
+      <form action ='/stylists/$stylist.getId()/delete' method = 'post'>
+        <div class = 'form-group'>
+          <input type="hidden" name="deleteClient" id="deleteClient" value='$client.getId()' class="form-control">
+        </div>
+        <button type="submit" class='btn btn-danger'>remove this client</button>
+      </form>
+      <form action='/ChangeStylists/client/$client.getId()' method = 'get'>
+        <div class= 'form-group'>
+           <input type="hidden" name="changeStylist" id="changeStylist" value=null class="form-control">
+        </div>
+        <button type = "submit" class="btn btn-dangeger">change stylists for this client</button>
+      </form>
+    #end
+  </ul>
+#else
+  no clients yet
+#end
+</div>
+
+
+<form action='/stylists/$stylist.getId()' method='post'>
+  <div class='form-group'>
+    <label>add a new client</label>
+    <input type="text" name="newClient" id="newClient" class="form-control">
+  </div>
+  <button type="submit" class='btn'>add</button>
+</form>
+
+<a href="/">return to stylists list</a>

@@ -1,0 +1,13 @@
+pick a new stylist for $client.getName()
+
+<form action="/stylists/$client.getId()/success" method="post">
+
+<label for="changedStylist">Select a List</label>
+<select id='changedStylist' name='changedStylist' type='text'>
+#foreach($stylist in $stylists)
+  <option value="$stylist.getId()">$stylist.getStylistName()</option>
+#end
+</select>
+
+  <button type="submit" class="btn btn-success">change stylist</button>
+</form>

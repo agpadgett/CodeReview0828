@@ -1,0 +1,29 @@
+<h1>available stylists:</h1>
+
+<div class="lists">
+<ul>
+#foreach($stylist in $stylists)
+  <li>$stylist.getStylistName()</li>
+  <form action='/stylists/$stylist.getId()' method = 'get'>
+    <div class= 'form-group'>
+       <input type="hidden" name="getClientList" id="getClientList" value=null class="form-control">
+    </div>
+    <button type = "submit" class="btn btn-dangeger">get client list for $stylist.getStylistName()</button>
+  </form>
+  <form action ='/stylists/delete' method = 'post'>
+    <div class = 'form-group'>
+      <input type="hidden" name="deleteStylist" id="deleteStylist" value='$stylist.getId()' class="form-control">
+    </div>
+    <button type="submit" class='btn btn-danger'>remove this stylist</button>
+  </form>
+#end
+</ul>
+</div>
+
+<form action='/stylists' method='post'>
+  <div class='form-group'>
+    <label>add a new stylist</label>
+    <input type="text" name="newStylist" id="newStylist" class="form-control">
+  </div>
+  <button type="submit" class='btn'>add</button>
+</form>

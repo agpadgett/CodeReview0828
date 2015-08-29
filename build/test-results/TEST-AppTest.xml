@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AppTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2015-08-29T18:51:36" hostname="Drea" time="1.656">
+  <properties/>
+  <testcase name="stylistIsAdded" classname="AppTest" time="0.719"/>
+  <testcase name="update_AssignesNewStylist" classname="AppTest" time="0.297"/>
+  <testcase name="rootTest" classname="AppTest" time="0.063"/>
+  <testcase name="routeToStylistClientListWorks" classname="AppTest" time="0.14"/>
+  <testcase name="addClientWorks" classname="AppTest" time="0.235"/>
+  <testcase name="update_StylistLinkWorks" classname="AppTest" time="0.187"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Thread-4] INFO spark.webserver.SparkServer - == Spark has ignited ...
+[Thread-4] INFO spark.webserver.SparkServer - >> Listening on 0.0.0.0:4567
+[Thread-4] INFO org.eclipse.jetty.server.Server - jetty-9.0.2.v20130417
+[Thread-4] INFO org.eclipse.jetty.server.ServerConnector - Started ServerConnector@116106c{HTTP/1.1}{0.0.0.0:4567}
+[Test worker] INFO spark.webserver.SparkServer - >>> Spark shutting down ...
+[Test worker] INFO org.eclipse.jetty.server.Server - Graceful shutdown org.eclipse.jetty.server.Server@16d208f by 
+[Test worker] INFO org.eclipse.jetty.server.ServerConnector - Stopped ServerConnector@116106c{HTTP/1.1}{0.0.0.0:4567}
+[Test worker] INFO spark.webserver.SparkServer - done
+]]></system-err>
+</testsuite>

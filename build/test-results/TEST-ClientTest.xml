@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ClientTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2015-08-29T18:51:38" hostname="Drea" time="0.758">
+  <properties/>
+  <testcase name="getName_returnsCorrectName" classname="ClientTest" time="0.024"/>
+  <testcase name="getId_returnsIdAfterSave" classname="ClientTest" time="0.094"/>
+  <testcase name="delete_deletesClientFromDatabase" classname="ClientTest" time="0.109"/>
+  <testcase name="find_findsCorrectId" classname="ClientTest" time="0.094"/>
+  <testcase name="all_emptyAtFirst" classname="ClientTest" time="0.062"/>
+  <testcase name="save_returnsTrueIfSaved" classname="ClientTest" time="0.078"/>
+  <testcase name="update_uptdatesStylistIdInMemmory" classname="ClientTest" time="0.094"/>
+  <testcase name="update_updatesStylistIdInDatabase" classname="ClientTest" time="0.11"/>
+  <testcase name="equals_returnsTrueIfNamesAreSame" classname="ClientTest" time="0.031"/>
+  <testcase name="getStylistId_returnsCorrectStylistId" classname="ClientTest" time="0.062"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
